@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beverages</title>
+        <link type="image/x-icon" rel="icon" href="milma logo.png">
+        <link href="http://fonts.googleapis.com/
+css?family=Marko+One" rel="stylesheet">
+    </head>
+    <body>
+        <h1  align="center" style="color:blue; font-size: 50px";>milma</h1>
+        <img src="milma logo.png" align="right" width="300px" height="200px">
+        
+        <style>
+            h1 {font-family: "Marko One", Georgia, 
+serif;}
+
+
+                body{
+                margin: 0;
+                padding: 0;
+                background-image: url("bg beverages.jpeg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #d1{
+                color:yellow;
+                font-size: xx-large;
+                text-align: center;
+                
+            }
+            
+            h1 {background-color: powderblue;
+            }
+            table, th,h1, td {
+              border: 1px solid black;
+              padding: 5px;
+            }
+            table {
+              border-spacing: 15px;
+              border-color:white;
+            }
+            th{
+                color:yellow;
+            }
+            #b1{
+                color:red;
+                border-radius: 5px ;
+                size: 20px;
+            }
+            
+            </style>
+            <h1 align="center" style="font-style: oblique";>Select items</h1>
+        <table align="center" >
+            <tr>
+                <th colspan="4" align="right">price</th>
+            </tr>
+            <tr>
+                <th><img src="lime juice.jpeg" width="50px" height="50px"></th>
+                <th>lime juice</th>
+                 <th><p><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a1"> 
+                    
+                     
+                    <br>
+                </p>
+                </th>
+                <th>30</th>
+            </tr>
+            <tr>
+            
+                <th><img src="orange juice.jpeg" width="50px" height="50px"></th>
+                <th>ORANGE JUICE</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a2"> 
+                    
+                
+                </th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <th><img src="kiwi juice.jpg" width="50px" height="50px"></th>
+                <th>KIWI JUICE</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a3"> 
+                    
+                
+                </th>
+                <th>50</th>
+            </tr>
+            <tr>
+                <th><img src="MANGO JUICE.jpeg" width="50px" height="50px"></th>
+                <th>MANGO JUICE</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a4"> 
+                  
+                
+                </th>
+                <th>50</th>
+            </tr>
+            <tr>
+                <th><img src="strawberry.jpeg" width="50px" height="50px"></th>
+                <th>STRAWBERRY MIKSHAKE</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a5"> 
+                   
+                
+                </th>
+                <th>75</th>
+            </tr>
+            <tr>
+                <th><img src="CHOCOLATE.jpeg" width="50px" height="50px"></th>
+                <th>CHOCOLATE MILKSHAKE</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a6"> 
+                    
+                
+                </th>
+                <th>80</th>
+            </tr>
+            <tr>
+                <th><img src="VANILLA.jpeg" width="50px" height="50px"></th>
+                <th>VANILA MILKSHAKE</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a7"> 
+                   
+                
+                </th>
+                <th>70</th>
+            </tr>
+            <tr>
+                <th><img src="LASSI.jpeg" width="50px" height="50px"></th>
+                <th>LASSI</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a8"> 
+                    
+                
+                </th>
+                <th>30</th>
+            </tr>
+            <tr>
+                <th><img src="MANGO LASSI.jpeg" width="50px" height="50px"></th>
+                <th>MANGO LASSI</th>
+                <th><label for="qty">Qty</label>
+                    <input type="text" size="2" id="a9"> 
+                    
+                
+                </th>
+                <th>40</th>
+            </tr>
+            
+        </table>
+        
+        <center>
+        <button  id="b1" onclick="calc()">calculate</button>
+   
+        <p id="d1">Amount displays here</p>
+        <button id="b1" onclick="pay()">PAY</button>
+    </center>
+        <script>
+
+        
+        function calc(){
+            let a = document.getElementById("a1").value*30;
+            let b = document.getElementById("a2").value*30;
+            let c = document.getElementById("a3").value*50;
+            let d = document.getElementById("a4").value*50;
+            let e = document.getElementById("a5").value*75;
+            let f = document.getElementById("a6").value*80;
+            let g = document.getElementById("a7").value*70;
+            let h = document.getElementById("a8").value*30;
+            let i = document.getElementById("a9").value*40;
+        
+            let k=a+b+c+d+e+f+g+h+i;
+            document.getElementById("d1").innerHTML=k;
+        }
+        function pay(){
+            window.open("payment.html");
+        }
+        </script>
+    </body>
+</html>

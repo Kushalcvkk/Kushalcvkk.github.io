@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <link type="image/x-icon" rel="icon" href="milma logo.png">
+    </head>
+    <body>
+       
+        <style>
+            img {
+ width: 300px;
+ height: 400px;
+ transform: rotate(-20deg);
+}
+img {
+ transform: scale(3, .5);
+}
+img {
+ transform: skew(15deg, 30deg);
+}
+            body{
+                margin: 0;
+                padding: 0;
+                background-image: url("page background.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        
+       img:hover, img:focus {
+ transform: scale(1.5) rotate(-5deg) translate(50px,30px);
+}
+    </style>
+    
+        <h1 style="color:blue" ; align="center">Welcome to milma! </h1>
+        <br><br><br>
+        <h2 style="color:purple"; align="center">ENTER YOUR DETAILS</h2><br>
+        
+        <form align ="center">
+            <label><b>Name</b></label>
+            <input type="text" id="name" name="name" ><br><br>
+            <label><b>mobile no.</b></label>
+            <input type="tel" id="no."><br><br>
+            <p><b>SELECT YOUR HOSTEL</b></p>
+            <select>
+                <option >MEENACHIL</option>
+                <option>MANIMALA</option>
+                <option>ANAIMUDI</option>
+                <option>SAHYADRI</option>
+            </select> <br><br>
+            <label ><b>ROOM NO.</b></label>
+            <input type="text" id="room"><br><br><br>
+            <button id="submit" onclick="myfun()">submit</button>
+        </form>
+    
+        <img src="page background.jpg">
+        <script>
+            function myfun()
+            {
+                window.open("project main.html");
+            }
+        </script>
+    
